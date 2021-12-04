@@ -124,12 +124,12 @@ li:hover span {
 
 }
 
-.currentCard {
+img {
   transition: 1s ease;
 }
 
-.currentCard:hover {
-  box-shadow: 10px 5px 5px black;
+img:hover {
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 22px 70px 4px;
   transition: 1s ease;
 }
 
