@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tas de merde</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+
+<body>
+
+<!-- Add your site or application content here -->
+<div>
+  <div id="modal">
+    <h1>
+      Tas de merde
+    </h1>
+    <p>Cliquez sur le nombre de joueur.</p>
+    <ul class="nbPlayer">
+      <li>
+        <span onclick="initGame(3)">3 Joueurs</span>
+      </li>
+      <li>
+        <span onclick="initGame(4)">4 Joueurs</span>
+      </li>
+      <li>
+        <span onclick="initGame(5)">5 Joueurs</span>
+      </li>
+      <li><span id="myBtn">Règles</span>
+      </li>
+    </ul>
+  </div>
+  <div id="game" onclick=""></div>
+  <div id="cards"></div>
+
+</div>
+
+<!--<span id="myBtn">Règles</span>-->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <h1>Règles du tas de merde</h1>
+    <p>Ce jeu se joue en multijoueur en mode "hot-seat", vous devrez donc vous passer l'ordinateur afin que chacun
+      puisse jouer :)</p>
+    <p>Le tas de merde se joue de 3 à 5 joueurs. Le but du jeu est de rassembler le plus vite possible 4 cartes
+      identiques (un carré).</p>
+    <p>Afin de rassembler ces 4 cartes, chacun des joueurs tour à tour donnera une carte de son choix à son voisin.</p>
+    <p>Le premier à rassembler un carré remporte la partie.</p>
+  </div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/game.js"></script>
+</body>
+
+</html>
+
+
